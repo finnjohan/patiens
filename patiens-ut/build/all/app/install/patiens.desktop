@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Patiens
+Comment=Klondike solitaire
+Comment[sv]=Klondike-patiens
+Exec=qmlscene %U qml/Main.qml
+Icon=assets/logo.svg
+Terminal=false
+Type=Application
+X-Lomiri-Touch=true

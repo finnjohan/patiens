@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Patiens – Klondike för Ubuntu Touch">
+  <defs>
+    <linearGradient id="felt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#177a4f"/>
+      <stop offset="0.55" stop-color="#0d5638"/>
+      <stop offset="1" stop-color="#06291b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#8ff0b8" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#8ff0b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#e8e4d8" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="22" result="blur"/>
+      <feOffset in="blur" dx="0" dy="18" result="offset"/>
+      <feFlood flood-color="#00170d" flood-opacity="0.55" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#felt)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- Stor, diskret spade i bakgrunden -->
+  <g transform="translate(430 560) scale(3.4)" fill="#ffffff" opacity="0.045">
+    <path d="M0 -70 C-34 -28 -64 -10 -64 18 c0 19 14 33 32 33 10 0 19 -5 24 -12 -3 19 -11 31 -22 42 h60 c-11 -11 -19 -23 -22 -42 5 7 14 12 24 12 18 0 32 -14 32 -33 C64 -10 34 -28 0 -70Z"/>
+    <rect x="-8" y="73" width="16" height="22" rx="5"/>
+  </g>
+
+  <!-- Kortfan till höger -->
+  <g transform="translate(1400 540)" filter="url(#shadow)">
+    <g transform="rotate(-17) translate(-120 20)">
+      <rect x="-130" y="-190" width="260" height="380" rx="26" fill="url(#cardEdge)" stroke="#b9c2c8" stroke-width="3"/>
+      <text x="-96" y="-130" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b">K</text>
+      <text x="-96" y="-82" font-family="sans-serif" font-size="42" fill="#c0392b">♥</text>
+      <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="150" fill="#c0392b">♥</text>
+      <text x="96" y="150" text-anchor="end" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b" transform="rotate(180 96 150)">K</text>
+    </g>
+    <g transform="rotate(2)">
+      <rect x="-130" y="-190" width="260" height="380" rx="26" fill="url(#cardEdge)" stroke="#b9c2c8" stroke-width="3"/>
+      <text x="-96" y="-130" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b">A</text>
+      <text x="-96" y="-82" font-family="sans-serif" font-size="42" fill="#20242b">♠</text>
+      <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="150" fill="#20242b">♠</text>
+      <text x="96" y="150" text-anchor="end" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b" transform="rotate(180 96 150)">A</text>
+    </g>
+    <g transform="rotate(18) translate(120 20)">
+      <rect x="-130" y="-190" width="260" height="380" rx="26" fill="url(#cardEdge)" stroke="#b9c2c8" stroke-width="3"/>
+      <text x="-96" y="-130" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b">D</text>
+      <text x="-96" y="-82" font-family="sans-serif" font-size="42" fill="#c0392b">♦</text>
+      <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="150" fill="#c0392b">♦</text>
+      <text x="96" y="150" text-anchor="end" font-family="sans-serif" font-size="48" font-weight="700" fill="#20242b" transform="rotate(180 96 150)">D</text>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g font-family="sans-serif">
+    <text x="130" y="405" font-size="186" font-weight="700" fill="#fbfaf3" letter-spacing="2">Patiens</text>
+    <text x="136" y="500" font-size="62" fill="#d8efe0">Klondike som fastnar.</text>
+    <text x="138" y="578" font-size="34" fill="#a9cfb6">Svenska och engelska · sparat spel · ledtrådar · inga reklamer</text>
+  </g>
+
+  <rect x="130" y="640" width="220" height="8" rx="4" fill="#8fe0ad" opacity="0.9"/>
+  <text x="130" y="990" font-family="sans-serif" font-size="28" fill="#7fae91">Ubuntu Touch · 24.04</text>
+</svg>

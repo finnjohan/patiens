@@ -1,0 +1,15 @@
+{
+    "name": "patiens",
+    "description": "Klondike solitaire – draw one or three, undo and saved games. Svenska & English.",
+    "architecture": "all",
+    "title": "Patiens",
+    "hooks": {
+        "patiens": {
+            "apparmor": "patiens.apparmor",
+            "desktop": "patiens.desktop"
+        }
+    },
+    "version": "0.1.0",
+    "maintainer": "Johan Finn <johanfinn@hotmail.com>",
+    "framework": "ubuntu-touch-24.04-1.x"
+}
